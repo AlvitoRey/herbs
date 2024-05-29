@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Herbs</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_tab_home">Welcome Home</string>
+    <string name="content_tab_profile">Change your Profile here</string>
+
+    <string name="tab_text_1">Followers</string>
+    <string name="tab_text_2">Followings</string>
+    <string name="tab_text_3">Setting</string>
+
+    <string name="image_description">Foto Coffe</string>
+    <string name="get_started">Get Started</string>
+    <string name="userNone">Tidak ada akun dengan user tersebut, silahkan cari lagi..</string>
+
+    <string name="rempah_description">Spices image</string>
+    <string name="title_text">Rempah</string>
+    <string name="subtitle_text">Indonesias Invaluable Wealth</string>
+    <string name="login_button">LOGIN</string>
+    <string name="signup_button">SIGN UP</string>
+    <string name="forget_password_text">Forget password?</string>
 </resources>
