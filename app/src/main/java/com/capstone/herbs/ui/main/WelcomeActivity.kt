@@ -7,7 +7,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.capstone.herbs.R
 
-
 class WelcomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
