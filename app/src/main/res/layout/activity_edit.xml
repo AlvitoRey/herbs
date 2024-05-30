@@ -2,9 +2,181 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.EditActivity">
+    android:background="#F3D4B1"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTextEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Edit Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivUserIcon"
+        android:layout_width="110dp"
+        android:layout_height="101dp"
+        android:src="@drawable/profile"
+        app:layout_constraintTop_toBottomOf="@id/tvTextEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/ivCamera"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/camera_2"
+        app:layout_constraintBottom_toBottomOf="@id/ivUserIcon"
+        app:layout_constraintEnd_toEndOf="@id/ivUserIcon" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/white"
+        android:hint="Username"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivEditUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivUserIcon" />
+
+    <ImageView
+        android:id="@+id/ivEditUsername"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/pencil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etUsername"
+        app:layout_constraintBottom_toBottomOf="@id/etUsername" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/white"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivEditEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUsername" />
+
+    <ImageView
+        android:id="@+id/ivEditEmail"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/pencil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etEmail"
+        app:layout_constraintBottom_toBottomOf="@id/etEmail" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivEditPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+    <ImageView
+        android:id="@+id/ivEditPassword"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/pencil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etPassword"
+        app:layout_constraintBottom_toBottomOf="@id/etPassword" />
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/white"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivEditPhoneNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+    <ImageView
+        android:id="@+id/ivEditPhoneNumber"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/pencil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etPhoneNumber"
+        app:layout_constraintBottom_toBottomOf="@id/etPhoneNumber" />
+
+    <TextView
+        android:id="@+id/tvProfilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Picture"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/etPhoneNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/ivProfilePic1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/camera_1"
+        app:layout_constraintTop_toBottomOf="@id/tvProfilePicture"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="8dp"/>
+
+    <ImageView
+        android:id="@+id/ivProfilePic2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/galery"
+        app:layout_constraintTop_toBottomOf="@id/tvProfilePicture"
+        app:layout_constraintStart_toEndOf="@id/ivProfilePic1"
+        android:layout_marginEnd="8dp"/>
+
+    <ImageView
+        android:id="@+id/ivProfilePic3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/profile_2"
+        app:layout_constraintTop_toBottomOf="@id/tvProfilePicture"
+        app:layout_constraintStart_toEndOf="@id/ivProfilePic2"
+        android:layout_marginEnd="8dp"/>
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/trash"
+        app:layout_constraintTop_toTopOf="@id/tvProfilePicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
