@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAF3EF"
-    tools:context=".ui.main.LoginActivity">
+    tools:context=".ui.sign.LoginActivity">
 
     <!-- Login Container -->
     <LinearLayout

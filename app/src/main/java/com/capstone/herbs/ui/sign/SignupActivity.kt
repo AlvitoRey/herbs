@@ -1,4 +1,4 @@
-package com.capstone.herbs.ui.main
+package com.capstone.herbs.ui.sign
 
 import android.os.Bundle
 import android.widget.Button

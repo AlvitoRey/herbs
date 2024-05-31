@@ -1,4 +1,4 @@
-package com.capstone.herbs.ui.main
+package com.capstone.herbs.ui.profile
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
