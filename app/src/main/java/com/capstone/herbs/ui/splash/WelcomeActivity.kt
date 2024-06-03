@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.capstone.herbs.R
+import com.capstone.herbs.ui.main.MainActivity
 import com.capstone.herbs.ui.password.ForgotPassword
 import com.capstone.herbs.ui.sign.LoginActivity
 import com.capstone.herbs.ui.sign.SignupActivity
@@ -42,6 +43,12 @@ class WelcomeActivity : AppCompatActivity() {
             // Handle forget password text click
             val resetpass = Intent(this@WelcomeActivity,ForgotPassword::class.java)
             startActivity(resetpass)
+        }
+        val succeslogin = false
+        if (succeslogin){
+            val mainIntent = Intent(this@WelcomeActivity, MainActivity::class.java)
+            startActivity(mainIntent)
+            finish()
         }
     }
 }
