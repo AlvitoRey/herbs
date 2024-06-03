@@ -6,7 +6,10 @@ plugins {
 android {
     namespace = "com.capstone.herbs"
     compileSdk = 34
-
+    buildFeatures {
+        viewBinding = true
+        buildConfig = true
+    }
     defaultConfig {
         applicationId = "com.capstone.herbs"
         minSdk = 24
@@ -15,9 +18,6 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        viewBinding {
-            enable = true
-        }
     }
 
     buildTypes {
