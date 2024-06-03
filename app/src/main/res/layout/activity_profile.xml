@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F3D4B1"
+    android:background="#FFFF"
     android:padding="16dp">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Profile"
         android:textSize="24sp"
-        android:textColor="#FFFFFF"
+        android:textColor="#F3D4B1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/ivUserIcon"
@@ -26,7 +26,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:text="Edit"
-        android:textColor="#FFFFFF"
+        android:textColor="#F3D4B1"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@id/ivUserIcon"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
         android:layout_width="80dp"
         android:layout_height="88dp"
         android:layout_marginTop="32dp"
-        android:src="@drawable/profile"
+        android:src="@drawable/profile_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
