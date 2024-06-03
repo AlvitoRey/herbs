@@ -2,42 +2,23 @@ package com.capstone.herbs.ui.profile
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.yourapp.databinding.ActivityEditProfileBinding
+import com.capstone.herbs.databinding.ActivityEditBinding
 
 class EditActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityEditProfileBinding
+    private lateinit var binding: ActivityEditBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityEditProfileBinding.inflate(layoutInflater)
+        binding = ActivityEditBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.ivCamera.setOnClickListener {
+        binding.ivCameraIcon.setOnClickListener {
         }
 
-        binding.ivEditUsername.setOnClickListener {
+        binding.ivProfilePicture.setOnClickListener {
         }
 
-        binding.ivEditEmail.setOnClickListener {
-        }
 
-        binding.ivEditPassword.setOnClickListener {
-        }
-
-        binding.ivEditPhoneNumber.setOnClickListener {
-        }
-
-        binding.ivProfilePic1.setOnClickListener {
-        }
-
-        binding.ivProfilePic2.setOnClickListener {
-        }
-
-        binding.ivProfilePic3.setOnClickListener {
-        }
-
-        binding.ivDelete.setOnClickListener {
-        }
     }
 }

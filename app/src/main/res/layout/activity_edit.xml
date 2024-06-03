@@ -1,4 +1,5 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,11 +8,6 @@
     tools:context=".ui.profile.EditActivity">
 
     <!-- Back button -->
-
-    <!-- Profile picture -->
-
-    <!-- Camera icon -->
-
     <ImageButton
         android:id="@+id/btnBack"
         android:layout_width="38dp"
@@ -21,11 +17,10 @@
         android:background="@android:color/transparent"
         android:contentDescription="Back"
         android:src="@drawable/baseline_arrow_back_24"
-        app:layout_constraintStart_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="16dp"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Profile picture -->
     <ImageView
         android:id="@+id/ivProfilePicture"
         android:layout_width="100dp"
@@ -35,11 +30,11 @@
         android:contentDescription="Profile Picture"
         android:src="@drawable/profile_3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="24dp"
         app:layout_constraintTop_toBottomOf="@id/btnBack" />
 
+    <!-- Camera icon -->
     <ImageView
         android:id="@+id/ivCameraIcon"
         android:layout_width="24dp"
@@ -48,8 +43,8 @@
         android:contentDescription="Camera Icon"
         app:layout_constraintBottom_toBottomOf="@id/ivProfilePicture"
         app:layout_constraintEnd_toEndOf="@id/ivProfilePicture"
-        app:layout_constraintBottom_margin="4dp"
-        app:layout_constraintEnd_margin="4dp" />
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp" />
 
     <!-- Profile title -->
     <TextView
@@ -63,154 +58,134 @@
         app:layout_constraintTop_toBottomOf="@id/ivProfilePicture"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_margin="16dp" />
+        android:layout_marginTop="16dp" />
 
     <!-- Username label -->
-
-    <!-- Username input -->
-
     <TextView
         android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
         android:text="Username"
         android:textColor="#4D4D4D"
         android:textSize="14sp"
-        app:layout_constraintStart_margin="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="24dp"
-        app:layout_constraintTop_toBottomOf="@id/tvProfileTitle" />
+        app:layout_constraintTop_toBottomOf="@id/tvProfileTitle"
+        android:layout_marginTop="20dp" />
 
+    <!-- Username input -->
     <EditText
         android:id="@+id/etUsername"
-        android:layout_width="349dp"
+        android:layout_width="0dp"
         android:layout_height="52dp"
         android:background="@drawable/rounded_edittext"
         android:hint="Username"
         android:padding="12dp"
-        app:layout_constraintEnd_margin="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_margin="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="8dp"
-        app:layout_constraintTop_toBottomOf="@id/tvUsername" />
+        app:layout_constraintTop_toBottomOf="@id/tvUsername"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp" />
 
     <!-- Email label -->
-
-    <!-- Email input -->
-
     <TextView
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
         android:text="Email"
         android:textColor="#4D4D4D"
         android:textSize="14sp"
-        app:layout_constraintStart_margin="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="16dp"
-        app:layout_constraintTop_toBottomOf="@id/etUsername" />
+        app:layout_constraintTop_toBottomOf="@id/etUsername"
+        android:layout_marginTop="12dp" />
 
+    <!-- Email input -->
     <EditText
         android:id="@+id/etEmail"
-        android:layout_width="349dp"
+        android:layout_width="0dp"
         android:layout_height="52dp"
         android:background="@drawable/rounded_edittext"
         android:hint="Email"
         android:padding="12dp"
-        app:layout_constraintEnd_margin="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_margin="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="8dp"
-        app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp" />
 
     <!-- Password label -->
-
-    <!-- Password input -->
-
     <TextView
         android:id="@+id/tvPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
         android:text="Password"
         android:textColor="#4D4D4D"
         android:textSize="14sp"
-        app:layout_constraintStart_margin="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="16dp"
-        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        android:layout_marginTop="8dp" />
 
+    <!-- Password input -->
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="349dp"
+        android:layout_width="0dp"
         android:layout_height="52dp"
         android:background="@drawable/rounded_edittext"
         android:hint="Password"
         android:padding="12dp"
-        app:layout_constraintEnd_margin="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_margin="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="8dp"
-        app:layout_constraintTop_toBottomOf="@id/tvPassword" />
+        app:layout_constraintTop_toBottomOf="@id/tvPassword"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp" />
 
     <!-- Phone Number label -->
-
-    <!-- Phone Number input -->
-
-    <!-- Save button -->
-
     <TextView
         android:id="@+id/tvPhoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
         android:text="Phone Number"
         android:textColor="#4D4D4D"
         android:textSize="14sp"
-        app:layout_constraintStart_margin="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="16dp"
-        app:layout_constraintTop_toBottomOf="@id/etPassword" />
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        android:layout_marginTop="8dp" />
 
+    <!-- Phone Number input -->
     <EditText
         android:id="@+id/etPhoneNumber"
-        android:layout_width="349dp"
+        android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/rounded_edittext"
         android:hint="Phone Number"
         android:padding="12dp"
-        app:layout_constraintEnd_margin="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_margin="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="8dp"
-        app:layout_constraintTop_toBottomOf="@id/tvPhoneNumber" />
+        app:layout_constraintTop_toBottomOf="@id/tvPhoneNumber"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
 
+    <!-- Save button -->
     <Button
         android:id="@+id/btnSave"
-        android:layout_width="344dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/rounded_button_orange"
         android:padding="12dp"
         android:text="Save"
         android:textColor="@android:color/white"
-        app:layout_constraintEnd_margin="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_margin="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="32dp"
-        app:layout_constraintTop_toBottomOf="@id/etPhoneNumber" />
+        app:layout_constraintTop_toBottomOf="@id/etPhoneNumber"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

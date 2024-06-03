@@ -13,7 +13,7 @@
         android:layout_height="255dp"
         android:src="@drawable/img"
         android:layout_centerInParent="true"
-        android:contentDescription="" />
+        android:contentDescription="gambar rempah rempah" />
 
     <Button
         android:id="@+id/button_get_started"
