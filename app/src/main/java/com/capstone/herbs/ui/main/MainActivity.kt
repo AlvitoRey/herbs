@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.LLLengkuas.setOnClickListener(this)
         binding.LLKayumanis.setOnClickListener(this)
         binding.LLKunyit.setOnClickListener(this)
+        binding.LLAndaliman.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -81,6 +82,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 intent.putExtra(DetailActivity.GAMBAR,"kunyitt.png")
                 intent.putExtra(DetailActivity.MANFAAT,R.string.manfaat_kunyit)
                 intent.putExtra(DetailActivity.OLAHAN,R.string.olahan_kunyit)
+                startActivity(intent)
+            }
+            R.id.LLAndaliman->{
+                val intent = Intent(this@MainActivity,DetailActivity::class.java)
+                intent.putExtra(DetailActivity.TITLE,"Andaliman")
+                intent.putExtra(DetailActivity.GAMBAR,"andaliman.png")
+                intent.putExtra(DetailActivity.MANFAAT,R.string.manfaat_andaliman)
+                intent.putExtra(DetailActivity.OLAHAN,R.string.olahan_andaliman)
                 startActivity(intent)
             }
         }

@@ -48,31 +48,31 @@
         android:id="@+id/button_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/subtitle_text"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle_text">
 
         <Button
             android:id="@+id/login_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
             android:backgroundTint="#8A3C1A"
             android:text="@string/login_button"
-            android:textColor="#FFFFFF"
-            android:layout_marginEnd="16dp"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/signup_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#D3B98E"
             android:text="@string/signup_button"
-            android:textColor="#8A3C1A"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:textColor="#8A3C1A" />
     </LinearLayout>
 
     <TextView
