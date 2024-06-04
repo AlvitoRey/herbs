@@ -41,7 +41,8 @@ class WelcomeActivity : AppCompatActivity() {
 
         forgetPasswordText.setOnClickListener {
             // Handle forget password text click
-            val resetpass = Intent(this@WelcomeActivity,ForgotPassword::class.java)
+//            val resetpass = Intent(this@WelcomeActivity,ForgotPassword::class.java)
+            val resetpass = Intent(this@WelcomeActivity,MainActivity::class.java)
             startActivity(resetpass)
         }
         val succeslogin = false

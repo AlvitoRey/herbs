@@ -21,4 +21,32 @@
 
 
     <string name="dark_mode">Dark Mode</string>
+    <string name="searchbar_hint">Tuliskan Rempahmu</string>
+
+
+    <string name="detail_jahe">
+        1. Mengurangi Reaksi Inflamasi.\n2. Mengendalikan Kadar Gula Darah.\n3. Meredakan Mual.
+    </string>
+    <string name="olahan_jahe">
+Tim Ayam Jahe \n Ayam Goreng Jahe \n Ginger Lemon Honey Tonic \n Lemon Jahe madu \n Minuman Jahe Susu \n
+    </string>
+    <string name="detail_lengkuas">
+        1. Meminimalisir radikal bebas.\n 2. Meningkatkan kesehatan rambut. \n 3. Lengkuas meningkatkan kesuburan pria. \n4. Melindungi dari infeksi.\n 5. Mengatasi radang sendi.
+    </string>
+    <string name="olahan_lengkuas"> Sayur Bayam Lengkuas \n Ayam Goreng Laos \n Tempe Lengkuas \n Cumi Goreng Lengkuas \n Dadar Jagung Bumbu Lengkuas \n
+    </string>
+    <string name="manfaat_kunyit">1. Mengobati Radang. \n 2. Mengatasi Perut yang Kembung. \n 3.Mengurangi Nyeri saat Haid. \n 4. Obat Alergi. \n 5. Menangkal Bakteri Jahat.
+    </string>
+    <string name="olahan_kunyit">Teh Kunyit \n Nasi Goreng Kunyit \n Jamu Kunyit Asam Sirih\n Kunyit Asem Jeruk Peres\n Es Jahe Kunyit Asem
+    </string>
+    <string name="manfaat_kayumanis">1. Menurunkan berat badan. \n2.Baik untuk pengidap diabetes.\n3.Meredakan kram menstruasi.\n4.Meningkatkan kekebalan tubuh.\n5.Mengatasi kista ovarium.
+    </string>
+    <string name="olahan_kayumanis">Wedang Kopi Kayu Manis \n Teh Susu Kayu Manis \nBolu Pisang Kayu Manis \n Bajigur Kayu Manis \n Pisang Goreng Wijen Kayu Manis
+    </string>
+<!--    <string name="manfaat_"></string>-->
+<!--    <string name="olahan_"></string>-->
+<!--    <string name="manfaat_"></string>-->
+<!--    <string name="olahan_"></string>-->
+<!--    <string name="manfaat_"></string>-->
+<!--    <string name="manfaat_"></string>-->
 </resources>
