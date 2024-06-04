@@ -1,5 +1,6 @@
 package com.capstone.herbs.ui.sign
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -64,5 +65,7 @@ class SignupActivity : AppCompatActivity() {
     private fun login() {
         // TODO: Add logic to navigate to the login screen
         Toast.makeText(this, "Navigate to login screen", Toast.LENGTH_SHORT).show()
+        val move = Intent(this@SignupActivity,LoginActivity::class.java)
+        startActivity(move)
     }
 }

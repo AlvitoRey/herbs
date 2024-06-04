@@ -43,10 +43,12 @@ Tim Ayam Jahe \n Ayam Goreng Jahe \n Ginger Lemon Honey Tonic \n Lemon Jahe madu
     </string>
     <string name="olahan_kayumanis">Wedang Kopi Kayu Manis \n Teh Susu Kayu Manis \nBolu Pisang Kayu Manis \n Bajigur Kayu Manis \n Pisang Goreng Wijen Kayu Manis
     </string>
-<!--    <string name="manfaat_"></string>-->
-<!--    <string name="olahan_"></string>-->
-<!--    <string name="manfaat_"></string>-->
-<!--    <string name="olahan_"></string>-->
-<!--    <string name="manfaat_"></string>-->
-<!--    <string name="manfaat_"></string>-->
+    <string name="manfaat_andaliman">1. Meningkatkan imunitas tubuh \n2. Mendukung kesehatan tulang \n3. Menyembuhkan luka \n4. Mencegah anemia \n5. Mengatasi sakit gigi
+    </string>
+    <string name="olahan_andaliman">Ayam Masak Andaliman\nMie Gomak Saus Andaliman\nSambel Andaliman\nNasi Goreng Andaliman\nNila Andaliman
+    </string>
+    <!--    <string name="manfaat_"></string>-->
+    <!--    <string name="olahan_"></string>-->
+    <!--    <string name="manfaat_"></string>-->
+    <!--    <string name="manfaat_"></string>-->
 </resources>
