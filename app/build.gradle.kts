@@ -9,6 +9,7 @@ android {
     buildFeatures {
         viewBinding = true
         buildConfig = true
+        dataBinding = true
     }
     defaultConfig {
         applicationId = "com.capstone.herbs"
@@ -36,10 +37,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
 }
 
 dependencies {
-
+    implementation ("com.github.qamarelsafadi:CurvedBottomNavigation:0.1.3")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
