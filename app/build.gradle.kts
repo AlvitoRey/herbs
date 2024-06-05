@@ -10,6 +10,7 @@ android {
         viewBinding = true
         buildConfig = true
         dataBinding = true
+        mlModelBinding = true
     }
     defaultConfig {
         applicationId = "com.capstone.herbs"
@@ -47,6 +48,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.tensorflow.lite.support)
+    implementation(libs.tensorflow.lite.metadata)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
