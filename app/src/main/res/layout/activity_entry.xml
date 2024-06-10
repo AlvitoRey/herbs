@@ -23,7 +23,7 @@
         android:layout_below="@id/imageView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:backgroundTint="#b57042"
+        android:backgroundTint="#897433"
         android:textColor="#ffffff" />
 
 </RelativeLayout>
