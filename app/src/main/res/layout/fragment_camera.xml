@@ -6,68 +6,85 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragment.CameraFragment">
 
-    <ImageView
-        android:id="@+id/back_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:src="@drawable/baseline_arrow_back_24"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+    <!-- Title TextView -->
     <TextView
-        android:id="@+id/title_text"
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Detect your spice"
-        android:textSize="18sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="64dp" />
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginTop="32dp"/>
 
-    <FrameLayout
-        android:id="@+id/image_container"
-        android:layout_width="242dp"
-        android:layout_height="179dp"
+    <!-- Image Placeholder -->
+    <!-- Ganti dengan drawable yang sesuai -->
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/circle_background"
-        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Back"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagePlaceholder"
+        android:layout_width="277dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Image Placeholder"
+        android:src="@drawable/circle_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_text">
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
 
-        <ImageView
-            android:id="@+id/image_placeholder"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerInside"
-            android:src="@drawable/camera_1" />
-    </FrameLayout>
+    <!-- Gallery Button -->
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <!-- Camera Button -->
+
+    <ImageView
+        android:id="@+id/imageint"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/baseline_image_search_24"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <Button
+        android:id="@+id/galleryButton"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/image_container"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#897433"
+        android:text="GALERY"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/cameraButton"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagePlaceholder" />
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#897433"
+        android:text="CAMERA"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/button_camera"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="CAMERA" />
-
-        <Button
-            android:id="@+id/button_gallery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="GALLERY" />
-    </LinearLayout>
+        app:layout_constraintStart_toEndOf="@id/galleryButton"
+        app:layout_constraintTop_toBottomOf="@id/imagePlaceholder" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
