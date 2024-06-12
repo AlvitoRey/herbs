@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF3EF"
+    android:background="#FFFFFFFF"
     tools:context=".ui.sign.LoginActivity">
 
     <!-- Login Container -->
@@ -12,7 +12,7 @@
         android:id="@+id/loginContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#FFFFF"
+        android:background="#FFFFFFFF"
         android:orientation="vertical"
         android:padding="24dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -105,7 +105,7 @@
             android:layout_marginBottom="24dp"
             android:backgroundTint="#897433"
             android:text="LOGIN"
-            android:textColor="#FFFFFF"
+            android:textColor="#FFFFFFFF"
             android:textStyle="bold" />
 
         <TextView
