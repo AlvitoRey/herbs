@@ -1,20 +1,19 @@
 plugins {
-    alias(libs.plugins.androidApplication)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
-    namespace = "com.capstone.herbs"
+    namespace = "com.example.herbs"
     compileSdk = 34
+
     buildFeatures {
         viewBinding = true
-        buildConfig = true
-        dataBinding = true
-        mlModelBinding = true
     }
+
     defaultConfig {
-        applicationId = "com.capstone.herbs"
-        minSdk = 24
+        applicationId = "com.example.herbs"
+        minSdk = 27
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -38,27 +37,35 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
 }
 
 dependencies {
-    implementation ("com.github.qamarelsafadi:CurvedBottomNavigation:0.1.3")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+<<<<<<< HEAD
+=======
     implementation(libs.tensorflow.lite.support)
     implementation(libs.tensorflow.lite.metadata)
     implementation(libs.androidx.navigation.fragment.ktx)
+>>>>>>> 79a3e368fdd8b6f4bf772ab3ff6bc58185eabec6
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
-    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
 
-    implementation("androidx.room:room-runtime:2.6.1")
+    // Tensorflow Lite dependencies
+    implementation("org.tensorflow:tensorflow-lite:2.9.0")
+    implementation("org.tensorflow:tensorflow-lite-gpu:2.9.0")
+    implementation("org.tensorflow:tensorflow-lite-support:0.4.2")
 
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 
-    implementation("androidx.datastore:datastore-preferences:1.0.0")
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 }
