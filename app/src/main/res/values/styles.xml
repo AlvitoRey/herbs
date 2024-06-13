@@ -1,6 +1,0 @@
-<resources>
-    <style name="CustomButtonStyle">
-        <item name="android:background">#FF0000</item> <!-- Warna merah -->
-        <item name="android:textColor">#FFFFFF</item> <!-- Warna teks putih -->
-    </style>
-</resources>
