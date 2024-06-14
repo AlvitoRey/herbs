@@ -1,7 +1,7 @@
-package StructureDataResponse
+package StructureData.Response.Data
 import com.google.gson.annotations.SerializedName
 
-data class Recipe(
+data class RecipeData(
     @SerializedName("id") val id: String,
     @SerializedName("id_picture") val idPicture: String,
     @SerializedName("bahan") val bahan: List<String>,
