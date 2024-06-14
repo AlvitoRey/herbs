@@ -8,7 +8,7 @@
     tools:context=".DetailSpiceActivity">
 
     <TextView
-        android:id="@+id/tv_nim_detail"
+        android:id="@+id/tv_type_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -29,25 +29,29 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nim_detail" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_type_detail" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivImageDetail"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name_detail"
-        app:srcCompat="@drawable/item_jahe" />
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:srcCompat="@drawable/detail_jahe" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvDescDetail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="24dp"
         android:text="Manfaat :\n
 1. Mengurangi Reaksi Inflamasi.\n
 2. Mengendalikan Kadar Gula Darah.\n
@@ -61,7 +65,7 @@ Diolah menjadi :\n
 5. Minuman Jahe Susu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/ivImageDetail" />
 
     <ImageButton
         android:id="@+id/back_button"

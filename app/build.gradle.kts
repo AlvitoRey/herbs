@@ -46,12 +46,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-<<<<<<< HEAD
-=======
-    implementation(libs.tensorflow.lite.support)
-    implementation(libs.tensorflow.lite.metadata)
-    implementation(libs.androidx.navigation.fragment.ktx)
->>>>>>> 79a3e368fdd8b6f4bf772ab3ff6bc58185eabec6
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
