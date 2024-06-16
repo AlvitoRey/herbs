@@ -32,15 +32,10 @@ interface ApiServices {
         @Query("ingredient") ingredient: String
     ): Call<GetRecipesResponse>
 
-    @GET("/recipes/name") // mengambil data resep berdasarkan nama
+    @GET("/recipes/name") // mengambil dat resep berdasarkan nama
     fun getRecipesByName(
         @Query("name") name: String
     ): Call<GetRecipesResponse>
-
-    @GET("/recipes/name") // mengambil data resep berdasarkan nama
-    fun getRecipesByNameFail(
-        @Query("name") name: String
-    ): Call<GetFailureResponse>
 
     @GET("/recipe-detail/{id}") // mengambil data resep berdasarkan id
     fun getRecipeById(
