@@ -6,9 +6,6 @@ import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.herbs.databinding.ActivitySearchSpiceBinding
-import com.example.herbs.sudah.DataSource
-import com.example.herbs.sudah.DetailSpiceActivity
-import com.example.herbs.sudah.Spice
 
 class SearchSpiceActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySearchSpiceBinding

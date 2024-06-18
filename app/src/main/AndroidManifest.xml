@@ -7,7 +7,7 @@
         android:required="true" />
 
     <uses-permission android:name="android.permission.CAMERA" />
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,6 +19,21 @@
         android:theme="@style/Theme.Herbs"
         tools:targetApi="31">
         <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchRecipeActivity"
             android:exported="false" />
         <activity
@@ -28,7 +43,7 @@
             android:name=".WelcomeActivity"
             android:exported="false" />
         <activity
-            android:name=".EntryActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".ResultActivity"
@@ -40,7 +55,7 @@
             android:name=".DetailSpiceActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".EntryActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

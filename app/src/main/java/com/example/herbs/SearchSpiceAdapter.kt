@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.herbs.databinding.ItemSearchSpiceBinding
-import com.example.herbs.sudah.Spice
+
 
 class SearchSpiceAdapter :
     RecyclerView.Adapter<SearchSpiceAdapter.SearchSpiceViewHolder>(), Filterable {
