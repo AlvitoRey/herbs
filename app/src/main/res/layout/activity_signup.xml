@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".SignupActivity">
+    tools:context=".auth.SignupActivity">
 
     <!-- Back button -->
     <ImageButton
@@ -135,7 +135,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:text="Phone Number"
+        android:text="Repeat Password"
         android:textColor="#897433"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,12 +144,12 @@
 
     <!-- Phone Number input -->
     <EditText
-        android:id="@+id/etPhoneNumber"
+        android:id="@+id/etRepeatPassword"
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_grey_rounded"
-        android:hint="Phone Number"
+        android:hint="Password"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -169,7 +169,7 @@
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/etRepeatPassword"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp" />
 

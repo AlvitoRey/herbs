@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFF"
-    tools:context=".WelcomeActivity">
+    tools:context=".auth.WelcomeActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -59,7 +59,6 @@
 
         <Button
             android:id="@+id/btnLoginWelcome"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_marginEnd="4dp"
             android:layout_height="wrap_content"
@@ -70,7 +69,6 @@
 
         <Button
             android:id="@+id/btnSignupWelcome"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_marginStart="4dp"
             android:layout_height="wrap_content"

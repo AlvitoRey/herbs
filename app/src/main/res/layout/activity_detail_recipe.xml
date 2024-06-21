@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailRecipeActivity">
+    tools:context=".recipe.DetailRecipeActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                 app:layout_constraintTop_toTopOf="@+id/btnBack" />
 
             <ImageView
-                android:id="@+id/btnAddPhoto"
+                android:id="@+id/image_resep"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="32dp"
@@ -64,7 +64,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btnAddPhoto" />
+                app:layout_constraintTop_toBottomOf="@id/image_resep" />
 
             <TextView
                 android:id="@+id/tvNamaResepValue"

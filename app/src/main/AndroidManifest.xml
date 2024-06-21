@@ -5,7 +5,11 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
@@ -17,45 +21,55 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Herbs"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".SignupActivity"
+            android:name=".profile.EditProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".recipe.DetailRecipeActivity"
             android:exported="false" />
         <activity
-            android:name=".NewPasswordActivity"
+            android:name=".recipe.AddRecipeActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".recipe.SearchRecipeActivity"
             android:exported="false" />
         <activity
-            android:name=".ForgotPasswordActivity"
+            android:name=".spice.SearchSpiceActivity"
             android:exported="false" />
         <activity
-            android:name=".SearchRecipeActivity"
+            android:name=".auth.NewPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".SearchSpiceActivity"
+            android:name=".auth.ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".profile.ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ResultActivity"
+            android:name=".auth.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ClassifyActivity"
+            android:name=".auth.WelcomeActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailSpiceActivity"
+            android:name=".ml.ResultActivity"
             android:exported="false" />
         <activity
-            android:name=".EntryActivity"
+            android:name=".ml.ClassifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".spice.DetailSpiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.EntryActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

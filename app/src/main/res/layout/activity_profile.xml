@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".ProfileActivity">
+    tools:context=".profile.ProfileActivity">
 
     <!-- Back button -->
     <ImageButton
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Edit Profile"
+        android:text="User Profile"
         android:textColor="#897433"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -45,24 +45,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnBack" />
 
-    <!-- Camera icon -->
-    <ImageView
-        android:id="@+id/ivCameraIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/outline_camera_alt_24"
-        android:contentDescription="Camera Icon"
-        app:layout_constraintBottom_toBottomOf="@id/ivProfilePicture"
-        app:layout_constraintEnd_toEndOf="@id/ivProfilePicture"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="4dp"
-        app:tint="@color/dark_grey" />
-
-    <!-- Profile title -->
-
-    <!-- Username label -->
-
-
     <TextView
         android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
@@ -76,12 +58,10 @@
         android:layout_marginTop="20dp" />
 
     <!-- Username input -->
-    <EditText
-        android:id="@+id/etUsername"
+    <TextView
+        android:id="@+id/tvUsernameValue"
         android:layout_width="0dp"
-        android:layout_height="52dp"
-        android:background="@drawable/bg_grey_rounded"
-        android:hint="Username"
+        android:layout_height="wrap_content"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,48 +80,18 @@
         android:textColor="#4D4D4D"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etUsername"
+        app:layout_constraintTop_toBottomOf="@id/tvUsernameValue"
         android:layout_marginTop="12dp" />
 
     <!-- Email input -->
-    <EditText
-        android:id="@+id/etEmail"
+    <TextView
+        android:id="@+id/tvEmailValue"
         android:layout_width="0dp"
-        android:layout_height="52dp"
-        android:background="@drawable/bg_grey_rounded"
-        android:hint="Email"
+        android:layout_height="wrap_content"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvEmail"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="8dp" />
-
-    <!-- Password label -->
-    <TextView
-        android:id="@+id/tvPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:text="Password"
-        android:textColor="#4D4D4D"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etEmail"
-        android:layout_marginTop="8dp" />
-
-    <!-- Password input -->
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="0dp"
-        android:layout_height="52dp"
-        android:background="@drawable/bg_grey_rounded"
-        android:hint="Password"
-        android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvPassword"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="8dp" />
@@ -156,37 +106,36 @@
         android:textColor="#4D4D4D"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailValue"
         android:layout_marginTop="8dp" />
 
     <!-- Phone Number input -->
-    <EditText
-        android:id="@+id/etPhoneNumber"
+    <TextView
+        android:id="@+id/tvPhoneNumberValue"
         android:layout_width="0dp"
-        android:layout_height="52dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/bg_grey_rounded"
-        android:hint="Phone Number"
+        android:layout_marginEnd="32dp"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvPhoneNumber"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp" />
+        app:layout_constraintTop_toBottomOf="@id/tvPhoneNumber" />
 
     <!-- Save button -->
     <Button
-        android:id="@+id/btnSave"
+        android:id="@+id/btnEdit"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="#897433"
         android:padding="12dp"
-        android:text="Save"
+        android:text="Edit"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/tvPhoneNumberValue"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp" />
 

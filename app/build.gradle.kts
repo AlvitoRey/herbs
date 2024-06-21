@@ -10,6 +10,7 @@ android {
     buildFeatures {
         viewBinding = true
         mlModelBinding = true
+        buildConfig = true
     }
 
     defaultConfig {
@@ -29,6 +30,10 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("String", "BASE_URL", "\"http://34.101.223.243:3000/\"")
+        }
+        debug {
+            buildConfigField("String", "BASE_URL", "\"http://34.101.223.243:3000/\"")
         }
     }
     compileOptions {
